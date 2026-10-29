@@ -41,7 +41,7 @@ const server = http.createServer((req, res) => {
     else {
         res.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8' });
         res.end('404 - Nie znaleziono strony');
-    }
+        }
     });
     server.listen(port, () => {
     console.log("Localhost:'//localhost:${port}'");
